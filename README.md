@@ -1,2 +1,2 @@
 # marckula.github.io
-personal site with stuff about me and my projects
+personal site with information about me and my projects
