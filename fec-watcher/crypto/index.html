@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crypto Donor Network — FEC Donor Watch</title>
+<style>
+:root{--bg:#08101d;--panel:#111a2c;--panel2:#17233a;--text:#e9eef7;--muted:#a9b6cb;--line:#2b3a58;--accent:#8fc7ff;--donor:#9dd7b6;--pac:#8fc7ff;--cand:#f0cc8a;--warn:#ef9f9f}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -20%,#162746,#08101d 52%);color:var(--text);font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1260px;margin:auto;padding:32px 18px 72px}a{color:var(--accent)}h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin:.3rem 0 .6rem}h2{margin:2rem 0 .7rem}.eyebrow{font-size:.76rem;text-transform:uppercase;letter-spacing:.11em;color:var(--accent);font-weight:800}.dek{max-width:880px;color:var(--muted);font-size:1.04rem}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.card,.network,.panel{background:rgba(17,26,44,.93);border:1px solid var(--line);border-radius:13px}.card{padding:15px}.metric{font-size:1.55rem;font-weight:780}.label{font-size:.82rem;color:var(--muted)}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.toolbar button{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 11px;cursor:pointer}.toolbar button.active{outline:2px solid var(--accent)}.network{overflow:auto;padding:10px}.network svg{min-width:1040px;width:100%;height:650px;display:block}.edge{stroke:#55708f;stroke-opacity:.55;fill:none}.edge.transfer{stroke:#8fc7ff}.edge.spend{stroke:#f0cc8a}.node rect{stroke-width:1.2}.node text{fill:var(--text);font-size:13px}.node .sub{fill:var(--muted);font-size:11px}.donor rect{fill:#17342c;stroke:#4f8d74}.pac rect{fill:#172b47;stroke:#5687bf}.cand rect{fill:#382f1c;stroke:#9f8443}.legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.83rem;margin:8px 0 0}.dot{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:5px}.dot.donor{background:var(--donor)}.dot.pac{background:var(--pac)}.dot.cand{background:var(--cand)}table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);font-size:.9rem}th,td{padding:10px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--panel2);color:#cfdaea;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.1rem .45rem;color:var(--muted);font-size:.73rem}.note{background:rgba(143,199,255,.08);border-left:3px solid var(--accent);padding:13px 15px;border-radius:7px;margin:16px 0}.panel{padding:17px 19px;margin:12px 0}.small{font-size:.82rem;color:var(--muted)}@media(max-width:780px){.metrics{grid-template-columns:1fr 1fr}main{padding:22px 10px 50px}table{display:block;overflow:auto}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow"><a href="../" style="text-decoration:none">FEC Donor Watch</a> · Network Explorer</div>
+<h1>Crypto donor network</h1>
+<p class="dek">A transaction-oriented map of the Fairshake political network for the 2025–26 federal cycle. It separates original donors, inter-committee transfers and candidate-directed independent expenditures so money is not double-counted as it moves through affiliated PACs.</p>
+<div class="note"><strong>Important:</strong> “Crypto-related” describes the donor or political issue. It does not mean every contribution was made on-chain. One notable exception is Coinbase’s March 14, 2025 Fairshake contribution: <strong>236.20702457 BTC, reported at $23,000,000</strong>.</div>
+<div class="metrics">
+<div class="card"><div class="metric">$130.2M</div><div class="label">Fairshake direct contributions this cycle</div></div>
+<div class="card"><div class="metric">$65.0M</div><div class="label">Fairshake transfers to affiliated PACs</div></div>
+<div class="card"><div class="metric">$69.4M</div><div class="label">Fairshake-network independent expenditures tracked across 54 races</div></div>
+<div class="card"><div class="metric">$112.99M</div><div class="label">Fairshake cash on hand through July 31, 2026 (FEC)</div></div>
+</div>
+<h2>Money-flow graph</h2>
+<div class="toolbar"><button class="active" data-filter="all">All flows</button><button data-filter="donation">Donor → PAC</button><button data-filter="transfer">PAC transfers</button><button data-filter="spend">Candidate spending</button></div>
+<div class="network">
+<svg viewBox="0 0 1200 650" role="img" aria-label="Crypto donor network graph">
+<g id="edges">
+<path class="edge donation" d="M220 95 C340 95 360 260 470 260" stroke-width="9"/><path class="edge donation" d="M220 175 C340 175 360 280 470 280" stroke-width="8"/><path class="edge donation" d="M220 255 C340 255 360 300 470 300" stroke-width="5"/><path class="edge donation" d="M220 335 C340 335 360 320 470 320" stroke-width="2"/>
+<path class="edge transfer" d="M650 275 C735 255 745 165 825 165" stroke-width="7"/><path class="edge transfer" d="M650 315 C735 335 745 405 825 405" stroke-width="6"/>
+<path class="edge spend" d="M995 135 C1060 125 1070 85 1110 85" stroke-width="5"/><path class="edge spend" d="M995 165 C1060 165 1070 165 1110 165" stroke-width="4"/><path class="edge spend" d="M995 195 C1060 205 1070 245 1110 245" stroke-width="2"/>
+<path class="edge spend" d="M995 375 C1060 365 1070 345 1110 345" stroke-width="3"/><path class="edge spend" d="M995 405 C1060 405 1070 425 1110 425" stroke-width="3"/><path class="edge spend" d="M995 435 C1060 455 1070 505 1110 505" stroke-width="2"/>
+<path class="edge spend" d="M650 295 C830 535 965 570 1110 585" stroke-width="5"/>
+</g>
+<g class="node donor"><rect x="35" y="65" width="185" height="60" rx="10"/><text x="50" y="90">Coinbase</text><text class="sub" x="50" y="110">$56.09M → Fairshake</text></g>
+<g class="node donor"><rect x="35" y="145" width="185" height="60" rx="10"/><text x="50" y="170">Ripple Labs</text><text class="sub" x="50" y="190">$48.0M → Fairshake</text></g>
+<g class="node donor"><rect x="35" y="225" width="185" height="60" rx="10"/><text x="50" y="250">Andreessen Horowitz</text><text class="sub" x="50" y="270">$23.8M → Fairshake</text></g>
+<g class="node donor"><rect x="35" y="305" width="185" height="60" rx="10"/><text x="50" y="330">Digital Currency Group</text><text class="sub" x="50" y="350">$1.0M → Fairshake</text></g>
+<g class="node pac"><rect x="470" y="240" width="180" height="100" rx="12"/><text x="490" y="270">FAIRSHAKE</text><text class="sub" x="490" y="292">C00835959</text><text class="sub" x="490" y="314">$130.2M direct + carryover</text></g>
+<g class="node pac"><rect x="825" y="120" width="170" height="90" rx="12"/><text x="843" y="150">Defend American Jobs</text><text class="sub" x="843" y="172">Republican-focused</text><text class="sub" x="843" y="192">$37M transfers from Fairshake</text></g>
+<g class="node pac"><rect x="825" y="360" width="170" height="90" rx="12"/><text x="843" y="390">Protect Progress</text><text class="sub" x="843" y="412">Democratic-focused</text><text class="sub" x="843" y="432">$28M transfers from Fairshake</text></g>
+<g class="node cand"><rect x="1110" y="55" width="85" height="55" rx="9"/><text x="1120" y="78">Felix Moore</text><text class="sub" x="1120" y="97">+ $12.2M</text></g>
+<g class="node cand"><rect x="1110" y="135" width="85" height="55" rx="9"/><text x="1120" y="158">Andy Barr</text><text class="sub" x="1120" y="177">+ $7.2M</text></g>
+<g class="node cand"><rect x="1110" y="215" width="85" height="55" rx="9"/><text x="1120" y="238">Randy Fine</text><text class="sub" x="1120" y="257">+ $1.7M</text></g>
+<g class="node cand"><rect x="1110" y="315" width="85" height="55" rx="9"/><text x="1120" y="338">A. Boafo</text><text class="sub" x="1120" y="357">+ $5.3M</text></g>
+<g class="node cand"><rect x="1110" y="395" width="85" height="55" rx="9"/><text x="1120" y="418">C. Menefee</text><text class="sub" x="1120" y="437">+ $4.9M</text></g>
+<g class="node cand"><rect x="1110" y="475" width="85" height="55" rx="9"/><text x="1120" y="498">J. Clark</text><text class="sub" x="1120" y="517">+ $4.2M</text></g>
+<g class="node cand"><rect x="1110" y="555" width="85" height="55" rx="9"/><text x="1120" y="578">J. Stratton</text><text class="sub" x="1120" y="597">− $9.7M</text></g>
+</svg>
+</div>
+<div class="legend"><span><i class="dot donor"></i>original donor</span><span><i class="dot pac"></i>political committee</span><span><i class="dot cand"></i>candidate/race</span><span>Line thickness ≈ relative dollars; + support, − oppose.</span></div>
+
+<h2>Notable donor transactions</h2>
+<table><thead><tr><th>Date</th><th>Source</th><th>Recipient</th><th>Reported value</th><th>Transaction note</th></tr></thead><tbody>
+<tr><td>2025-03-14</td><td><strong>Coinbase</strong></td><td>Fairshake</td><td><strong>$23,000,000</strong></td><td><span class="tag">on-chain asset</span> 236.20702457 BTC reported as the contribution.</td></tr>
+<tr><td>2025-06-25</td><td>Coinbase</td><td>Fairshake</td><td>$8,092,475</td><td>Reported contribution.</td></tr>
+<tr><td>2025-10-07</td><td>Coinbase</td><td>Fairshake</td><td>$15,000,000</td><td>Reported contribution.</td></tr>
+<tr><td>2025-01-21</td><td><strong>Ripple Labs</strong></td><td>Fairshake</td><td><strong>$23,000,000</strong></td><td>Reported contribution.</td></tr>
+<tr><td>2025-08-29</td><td>Ripple Labs</td><td>Fairshake</td><td>$25,000,000</td><td>Reported contribution.</td></tr>
+<tr><td>2025-12-10</td><td>Marc Andreessen</td><td>Fairshake</td><td>$11,900,000</td><td>Individual donor; partner at Andreessen Horowitz.</td></tr>
+<tr><td>2025-12-10</td><td>Ben Horowitz</td><td>Fairshake</td><td>$11,900,000</td><td>Individual donor; partner at Andreessen Horowitz.</td></tr>
+<tr><td>2026-06-05</td><td>Digital Currency Group</td><td>Fairshake</td><td>$1,000,000</td><td>Reported contribution.</td></tr>
+<tr><td>2025-01-30</td><td>Uniswap Labs</td><td>Fairshake</td><td>$999,987.89</td><td><span class="tag">token contribution</span> 82,303.53 UNI reported.</td></tr>
+<tr><td>2025-01-29</td><td>Robert Leshner / Superstate</td><td>Fairshake</td><td>$300,007.50</td><td><span class="tag">token contribution</span> 4,250 COMP reported.</td></tr>
+</tbody></table>
+
+<h2>Routing through affiliated PACs</h2>
+<div class="panel"><strong>Fairshake → Defend American Jobs: $37.0M</strong><br><span class="small">Republican-facing affiliate. FEC summary through July 31 shows $38.27M total receipts and $32.45M independent expenditures.</span></div>
+<div class="panel"><strong>Fairshake → Protect Progress: $28.0M</strong><br><span class="small">Democratic-facing affiliate. FEC summary through July 31 shows $28.60M receipts and roughly $25.25M independent expenditures.</span></div>
+
+<h2>Largest 2026 race exposures</h2>
+<table><thead><tr><th>Candidate / race</th><th>Direction</th><th>Approx. network spend</th><th>Vehicle</th></tr></thead><tbody>
+<tr><td>Felix Moore (R), Alabama Senate</td><td>Support</td><td>$12.2M</td><td>Defend American Jobs</td></tr>
+<tr><td>Juliana Stratton (D), Illinois Senate</td><td>Oppose</td><td>$9.7M</td><td>Fairshake / Protect Progress</td></tr>
+<tr><td>Andy Barr (R), Kentucky Senate</td><td>Support</td><td>$7.2M</td><td>Defend American Jobs</td></tr>
+<tr><td>Adrian Boafo (D), Maryland-05</td><td>Support</td><td>$5.3M</td><td>Protect Progress</td></tr>
+<tr><td>Christian Menefee (D), Texas-18</td><td>Support</td><td>$4.9M</td><td>Protect Progress</td></tr>
+<tr><td>Jasmine Clark (D), Georgia-13</td><td>Support</td><td>$4.2M</td><td>Protect Progress</td></tr>
+<tr><td>La Shawn Ford (D), Illinois-07</td><td>Oppose</td><td>$2.4M</td><td>Fairshake</td></tr>
+</tbody></table>
+
+<h2>Issue-interest layer</h2>
+<div class="panel"><strong>Core policy interest:</strong> cryptocurrency and blockchain regulation, including federal market-structure and stablecoin legislation. The network is deliberately bipartisan: donor funds enter Fairshake, then can be routed to a Republican-facing or Democratic-facing affiliate. Candidate spending is an independent expenditure and is not a contribution to the candidate.</div>
+<div class="panel"><strong>Interpretation constraint:</strong> A donor → PAC → candidate path establishes disclosed financial support or opposition. It does <em>not</em> establish that the recipient changed a vote or policy position because of that support. Policy outcomes should be shown as a separate evidence layer.</div>
+
+<h2>Sources & methodology</h2>
+<ul class="small">
+<li><a href="https://www.fec.gov/data/committee/C00835959/">FEC — Fairshake (C00835959)</a></li>
+<li><a href="https://www.fec.gov/data/committee/C00836221/">FEC — Defend American Jobs (C00836221)</a></li>
+<li><a href="https://www.fec.gov/data/committee/C00848440/">FEC — Protect Progress (C00848440)</a></li>
+<li><a href="https://influence.citationneeded.news/2026/networks/fairshake">Tech Influence Watch — Fairshake network</a>, used to normalize donor/entity names and aggregate transaction/race views derived from FEC filings.</li>
+<li><a href="https://www.factcheck.org/2026/08/fairshake-2/">FactCheck.org — Fairshake profile</a>, cross-checking major donors and 2026 activity.</li>
+</ul>
+<p class="small">Updated September 5, 2026. Dollar totals from committee summaries may lag very recent filings. Network totals can differ from FEC period summaries when they incorporate carried-forward cash, later transaction normalization or exclude operating expenditures. This page therefore labels the metric being shown rather than treating unlike totals as interchangeable.</p>
+<script>
+const buttons=[...document.querySelectorAll('[data-filter]')],edges=[...document.querySelectorAll('.edge')];buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.filter;edges.forEach(e=>{e.style.opacity=(f==='all'||e.classList.contains(f))?'1':'.08'});}));
+</script>
+</main></body></html>
