@@ -1,0 +1,98 @@
+{
+  "review_date": "2026-10-27",
+  "provenance": "Donor extraction and research leads imported from the September 25 prior conversation; Senate PDF could not be re-extracted in this review. No transaction ledger verified.",
+  "senate_release": "https://www.epw.senate.gov/public/index.cfm/2026/9/leader-schumer-whitehouse-unveil-comprehensive-new-report-exposing-corrupt-fossil-fuel-industry-control-over-trump-administration",
+  "named_total": 188606000,
+  "reported_industry_total": 201000000,
+  "arithmetic_difference": 12394000,
+  "donors": [
+    {
+      "name": "Timothy Mellon",
+      "senate_amount_from_prior_extraction": 151500000,
+      "prior_research_lead": "Prior analysis cited roughly $150M–$151.5M to MAGA Inc.; exact total and cutoff remain unreconciled.",
+      "aggregation_caution": "Individual; cutoff uncertainty",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Timothy%20Mellon"
+    },
+    {
+      "name": "Kelcy Warren",
+      "senate_amount_from_prior_extraction": 11000000,
+      "prior_research_lead": "Prior leads: $5M MAGA Inc.; $814,600 Trump 47; other committees needed.",
+      "aggregation_caution": "Multiple committees",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Kelcy%20Warren"
+    },
+    {
+      "name": "Paul Singer",
+      "senate_amount_from_prior_extraction": 8000000,
+      "prior_research_lead": "Prior leads: $5M MAGA Inc.; $2.5M Preserve America PAC. Remaining amount unresolved.",
+      "aggregation_caution": "Multiple committees",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Paul%20Singer"
+    },
+    {
+      "name": "Tim Dunn",
+      "senate_amount_from_prior_extraction": 5000000,
+      "prior_research_lead": "Prior analysis identified a $5M MAGA Inc. contribution; original filing still required here.",
+      "aggregation_caution": "Contributor identity requires filing check",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Tim%20Dunn"
+    },
+    {
+      "name": "Harold Hamm",
+      "senate_amount_from_prior_extraction": 4000000,
+      "prior_research_lead": "Prior leads: $1M personal MAGA Inc.; about $614K Trump 47; $2M Continental Resources.",
+      "aggregation_caution": "Person plus company; attribution inferred",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Harold%20Hamm"
+    },
+    {
+      "name": "Syed Javaid Anwar",
+      "senate_amount_from_prior_extraction": 2000000,
+      "prior_research_lead": "Prior lead: $1,424,600 Trump 47; about $575,400 remains unexplained.",
+      "aggregation_caution": "Incomplete reconstruction",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Syed%20Javaid%20Anwar"
+    },
+    {
+      "name": "George Bishop",
+      "senate_amount_from_prior_extraction": 2000000,
+      "prior_research_lead": "Prior lead: $1.5M personal giving; roughly $500K reportedly household-linked.",
+      "aggregation_caution": "Household attribution unconfirmed",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=George%20Bishop"
+    },
+    {
+      "name": "Joseph Craft III",
+      "senate_amount_from_prior_extraction": 2000000,
+      "prior_research_lead": "Complete election-cycle total not reproduced in prior analysis.",
+      "aggregation_caution": "Unresolved",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Joseph%20Craft%20III"
+    },
+    {
+      "name": "Jeffery Hildebrand",
+      "senate_amount_from_prior_extraction": 1700000,
+      "prior_research_lead": "Prior leads: $511,600 Jeffery and $210,121 Melinda to Trump 47; broader total unresolved.",
+      "aggregation_caution": "Household / other giving inferred",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Jeffery%20Hildebrand"
+    },
+    {
+      "name": "Ray Washburne",
+      "senate_amount_from_prior_extraction": 611000,
+      "prior_research_lead": "Trump 47 leads were noted, without a reproducible primary aggregate.",
+      "aggregation_caution": "Unresolved",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Ray%20Washburne"
+    },
+    {
+      "name": "Chris Wright",
+      "senate_amount_from_prior_extraction": 795000,
+      "prior_research_lead": "Prior lead: at least $228,390 in Wright/family joint-fundraising giving; remainder unresolved.",
+      "aggregation_caution": "Family / committee scope inferred",
+      "status": "Not transaction-verified in this publication",
+      "fec_search": "https://www.fec.gov/data/receipts/individual-contributions/?two_year_transaction_period=2024&contributor_name=Chris%20Wright"
+    }
+  ]
+}
